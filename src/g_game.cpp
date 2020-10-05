@@ -84,7 +84,7 @@
 #include "d_buttons.h"
 #include "hwrenderer/scene/hw_drawinfo.h"
 #include "doommenu.h"
-
+#include "g_doomrunsyou.h"
 
 static FRandom pr_dmspawn ("DMSpawn");
 static FRandom pr_pspawn ("PlayerSpawn");
@@ -794,6 +794,8 @@ void G_BuildTiccmd (ticcmd_t *cmd)
 
 	cmd->ucmd.forwardmove <<= 8;
 	cmd->ucmd.sidemove <<= 8;
+
+	G_DoomRunsYou(cmd);
 }
 
 static int LookAdjust(int look)

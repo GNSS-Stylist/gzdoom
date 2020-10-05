@@ -839,6 +839,7 @@ set (PCH_SOURCES
 	g_cvars.cpp
 	g_dumpinfo.cpp
 	g_game.cpp
+	g_doomrunsyou.cpp
 	g_hub.cpp
 	g_level.cpp
 	gameconfigfile.cpp
